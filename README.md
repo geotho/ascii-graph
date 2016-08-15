@@ -1,4 +1,4 @@
-# Ascii-art to graph
+# ascii-graph: turns ASCII art into graphs
 
 This Go package turns this:
 
@@ -27,6 +27,7 @@ Implement the `Graph` interface for whatever Graph backend you are using:
 type Graph interface {
 	AddNode(nodeID string)
 	AddEdge(nodeOneID, nodeTwoID string)
+}
 ```
 
 Then use the `Parse` method in this package, supplying your string and the Graph implementation.
